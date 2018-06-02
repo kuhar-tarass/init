@@ -1,0 +1,5 @@
+посмотрели /etc/resolv.conf
+
+
+scutil --dns |grep nameserver | cut -d ' ' -f 5 | tail -1
+

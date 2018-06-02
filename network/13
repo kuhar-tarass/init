@@ -1,0 +1,2 @@
+в форме DHCP 
+ipconfig getoption en0 domain_name_server

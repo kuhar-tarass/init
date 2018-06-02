@@ -1,0 +1,2 @@
+host slash16.org | grep address | cut -d ' ' -f 4
+
