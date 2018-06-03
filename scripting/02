@@ -1,7 +1,0 @@
-#!/bin/bash
-sudo apt update | sudo tee /var/log/update_script.log > /dev/null
-sudo apt upgrade |sudo tee /var/log/update_script.log > /dev/null
-#echo "0 4 * * 1 sh ~/02" |sudo tee /02time > /dev/null
-#sudo crontab  /02time
-#sudo rm /02time
-

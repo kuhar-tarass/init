@@ -1,5 +1,0 @@
-#!/bin/bash
-crontab -l > /02time
-echo "0 4 * * 1 sh ~/02" | sudo tee -a /02time > /dev/null
-sudo crontab  /02time
-sudo rm /02time
