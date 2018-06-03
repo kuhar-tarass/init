@@ -1,0 +1,7 @@
+#!/bin/bash
+TEMP=$(cat /cronsum)
+MD5=$(md5sum /etc/crontab |cut -d ' ' -f 1)
+if [ "$TEMP" != "$MD5" ]; then 
+	echo '/etc/crontab modifier le \$(date)'| mail -s '/etc/crontab modifier' root;
+	echo $MD% > /cronsum;
+fi

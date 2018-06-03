@@ -1,0 +1,5 @@
+#!/bin/bash
+crontab -l > /04time
+echo "0 0 * * * sh ~/04" | sudo tee -a /04time > /dev/null
+sudo crontab /04time 
+sudo rm /04time 
